@@ -492,3 +492,18 @@
     if (submitBtn) submitBtn.disabled = false;
   });
 })();
+/* =========================================
+   PAUSAR MÚSICA AL SALIR DE LA PÁGINA / BLOQUEAR CELULAR
+   ========================================= */
+
+document.addEventListener("visibilitychange", () => {
+  const bgMusic = document.getElementById("bgMusic");
+  if (!bgMusic) return;
+
+  if (document.hidden) {
+    // Página no visible → pausa música
+    bgMusic.pause();
+  }
+});
+
+

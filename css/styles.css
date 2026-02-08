@@ -1559,6 +1559,22 @@ a{ color: inherit; text-decoration: none; }
   -webkit-overflow-scrolling: touch;
 }
 
+/* =========================================
+   OUR STORY MODAL: IMAGEN ESTABLE (RECOMENDADO)
+   ========================================= */
+
+.story-modal-image{
+  background: rgba(232,239,243,0.55);
+}
+
+.story-modal-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* ✅ no reencuadra, no “se mueve” */
+  object-position: center;
+  display: block;
+}
+
 
 
 
