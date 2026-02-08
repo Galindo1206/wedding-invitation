@@ -1456,5 +1456,110 @@ a{ color: inherit; text-decoration: none; }
   }
 }
 
+/* =========================================
+   NAVIGATION: LATERAL DERECHO (RECOMENDADO)
+   ========================================= */
+
+.nav{
+  position: fixed;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 50;
+}
+
+/* Botones */
+.nav button{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(111,143,163,0.55);
+  transition: transform .25s ease, background .25s ease;
+}
+
+.nav button.is-active{
+  background: rgba(255,255,255,0.95);
+  transform: scale(1.25);
+}
+
+/* =========================================
+   FIX DEFINITIVO: SIDE-NAV A LA DERECHA TAMBIÉN EN MÓVIL
+   ========================================= */
+
+@media (max-width: 680px){
+  .side-nav{
+    position: fixed !important;
+
+    /* ubicación lateral */
+    top: 50% !important;
+    right: 12px !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+
+    /* layout vertical */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+
+    /* limpia estilos tipo footer */
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+}
+
+/* =========================================
+   OUR STORY MODAL: SCROLL INTERNO + FOTO RESPONSIVE
+   ========================================= */
+
+.story-modal-content{
+  max-height: min(86vh, 720px);
+  overflow: hidden; /* el scroll será en el panel de texto */
+}
+
+.story-modal-image{
+  max-height: min(86vh, 720px);
+}
+
+.story-modal-image img{
+  width: 100%;
+  height: 100%;
+  max-height: min(86vh, 720px);
+  object-fit: cover;
+  display: block;
+}
+
+/* El texto debe scrollear */
+.story-modal-text{
+  max-height: min(86vh, 720px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 14px; /* espacio para scrollbar */
+}
+
+@media (max-width: 860px){
+  .story-modal-content{
+    max-height: 88vh;
+  }
+  .story-modal-image{
+    max-height: 36vh;  /* imagen no tan grande */
+  }
+  .story-modal-text{
+    max-height: calc(88vh - 36vh);
+  }
+}
+
+.story-modal{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
 
 
