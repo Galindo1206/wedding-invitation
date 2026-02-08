@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Invitación de Boda</title>
 
   <!-- Tipografías (puedes cambiarlas luego) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -16,410 +19,435 @@
 <body>
   <!-- INTRO: SOBRE -->
   <section id="intro" class="intro" aria-label="Portada de invitación">
-  <div class="film-bg" aria-hidden="true">
-    <div class="film-strip strip-a"></div>
-    <div class="film-strip strip-b"></div>
-    <div class="film-strip strip-c"></div>
-  </div>
-   <div class="intro-overlay"></div>
+    <div class="film-bg" aria-hidden="true">
+      <div class="film-strip strip-a"></div>
+      <div class="film-strip strip-b"></div>
+      <div class="film-strip strip-c"></div>
+    </div>
+    <div class="intro-overlay"></div>
     <div class="intro__container">
-      <div class="intro__badge">You are invited</div>
+      <div class="intro__badge">
+        You are invited
+      </div>
 
-<button id="envelopeBtn" class="envelope envelope--image" type="button">
-  <img 
-    src="assets/img/envelope.png" 
-    alt="Sobre de invitación"
-    class="envelope__img"
-  />
+      <button id="envelopeBtn" class="envelope envelope--image" type="button">
+        <img src="assets/img/envelope.png" alt="Sobre de invitación" class="envelope__img" />
 
-  <div class="envelope__text intro-read">
-    <div class="letter__names">Austin &amp; Briggithe</div>
-    <div class="letter__date">Saturday, April 18 · 2:00 PM · Fredericksburg</div>
-    <div class="letter__hint">Haz clic para abrir</div>
-    <div class="letter__hint">Click to open</div>
-  </div>
-</button>
-      
+        <div class="envelope__text intro-read">
+          <div class="letter__names">
+            Austin &amp; Briggithe
+          </div>
+          <div class="letter__date">
+            Saturday, April 18 · 2:00 PM ·
+            Fredericksburg
+          </div>
+          <div class="letter__hint">
+            Haz clic para abrir
+          </div>
+          <div class="letter__hint">
+            Click to open
+          </div>
+        </div>
+      </button>
     </div>
   </section>
 
   <!-- MAIN: INVITACIÓN (inicia oculta) -->
   <main id="main" class="main is-hidden" aria-label="Invitación principal">
-
-
+    
     <nav class="side-nav" aria-label="Sections">
-  <a href="#home" data-screen="home" class="side-nav__link is-active">
-    <span class="side-nav__dot" aria-hidden="true"></span>
-    <span class="side-nav__label">Home</span>
-  </a>
+      <a href="#home" data-screen="home" class="side-nav__link is-active">
+        <span class="side-nav__dot" aria-hidden="true"></span>
+        <span class="side-nav__label">Home</span>
+      </a>
 
-  <a href="#story" data-screen="story" class="side-nav__link">
-    <span class="side-nav__dot" aria-hidden="true"></span>
-    <span class="side-nav__label">Our Story</span>
-  </a>
+      <a href="#story" data-screen="story" class="side-nav__link">
+        <span class="side-nav__dot" aria-hidden="true"></span>
+        <span class="side-nav__label">Our Story</span>
+      </a>
 
-  <a href="#venue" data-screen="venue" class="side-nav__link">
-    <span class="side-nav__dot" aria-hidden="true"></span>
-    <span class="side-nav__label">Venue</span>
-  </a>
+      <a href="#venue" data-screen="venue" class="side-nav__link">
+        <span class="side-nav__dot" aria-hidden="true"></span>
+        <span class="side-nav__label">Venue</span>
+      </a>
 
-  <a href="#itinerary" data-screen="itinerary" class="side-nav__link">
-    <span class="side-nav__dot" aria-hidden="true"></span>
-    <span class="side-nav__label">Itinerary</span>
-  </a>
+      <a href="#itinerary" data-screen="itinerary" class="side-nav__link">
+        <span class="side-nav__dot" aria-hidden="true"></span>
+        <span class="side-nav__label">Itinerary</span>
+      </a>
 
- <a href="#wedding-wishes" data-screen="wedding-wishes" class="side-nav__link">
-  <span class="side-nav__dot" aria-hidden="true"></span>
-  <span class="side-nav__label">Wedding Wishes</span>
-</a>
+      <a href="#wedding-wishes" data-screen="wedding-wishes" class="side-nav__link">
+        <span class="side-nav__dot" aria-hidden="true"></span>
+        <span class="side-nav__label">Wedding Wishes</span>
+      </a>
 
+      <a href="#rsvp" data-screen="rsvp" class="side-nav__link">
+        <span class="side-nav__dot" aria-hidden="true"></span>
+        <span class="side-nav__label">RSVP</span>
+      </a>
+    </nav>
 
-  <a href="#rsvp" data-screen="rsvp" class="side-nav__link">
-    <span class="side-nav__dot" aria-hidden="true"></span>
-    <span class="side-nav__label">RSVP</span>
-  </a>
-</nav>
-
- <!-- SECTION HOME -->
-<section class="hero screen is-active" id="home" data-screen="home">
-  <div class="hero__inner">
-    <div class="hero__panel panel">
-      <div class="hero__top">
-        <span class="hero__badge">You’re invited</span>
-        <span class="hero__divider" aria-hidden="true"></span>
-        <span class="hero__location">Fredericksburg</span>
-      </div>
-
-      <h1 class="hero__title">We’re getting married</h1>
-
-      <p class="hero__lead">
-        We would be honored to celebrate this special day with you.
-      </p>
-
-      <div class="hero__countdown">
-        <div class="countdown" role="group" aria-label="Wedding countdown">
-          <div class="countdown__item">
-            <div class="countdown__value" id="cdDays">00</div>
-            <div class="countdown__label">Days</div>
+    <!-- SECTION HOME -->
+    <section class="hero screen is-active" id="home" data-screen="home">
+      <div class="hero__inner">
+        <div class="hero__panel panel">
+          <div class="hero__top">
+            <span class="hero__badge">You’re invited</span>
+            <span class="hero__divider" aria-hidden="true"></span>
+            <span class="hero__location">Fredericksburg</span>
           </div>
-          <div class="countdown__item">
-            <div class="countdown__value" id="cdHours">00</div>
-            <div class="countdown__label">Hours</div>
+
+          <h1 class="hero__title">
+            We’re getting married
+          </h1>
+
+          <p class="hero__lead">
+            We would be honored to celebrate
+            this special day with you.
+          </p>
+
+          <div class="hero__countdown">
+            <div class="countdown" role="group" aria-label="Wedding countdown">
+              <div class="countdown__item">
+                <div class="countdown__value" id="cdDays">
+                  00
+                </div>
+                <div class="countdown__label">
+                  Days
+                </div>
+              </div>
+              <div class="countdown__item">
+                <div class="countdown__value" id="cdHours">
+                  00
+                </div>
+                <div class="countdown__label">
+                  Hours
+                </div>
+              </div>
+              <div class="countdown__item">
+                <div class="countdown__value" id="cdMinutes">
+                  00
+                </div>
+                <div class="countdown__label">
+                  Minutes
+                </div>
+              </div>
+              <div class="countdown__item">
+                <div class="countdown__value" id="cdSeconds">
+                  00
+                </div>
+                <div class="countdown__label">
+                  Seconds
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="countdown__item">
-            <div class="countdown__value" id="cdMinutes">00</div>
-            <div class="countdown__label">Minutes</div>
+
+          <div class="hero__cta">
+            <button class="btn btn--primary" type="button" data-goto="itinerary">
+              View details
+            </button>
+            <button class="btn btn--ghost" type="button" data-goto="rsvp">
+              Confirm attendance
+            </button>
           </div>
-          <div class="countdown__item">
-            <div class="countdown__value" id="cdSeconds">00</div>
-            <div class="countdown__label">Seconds</div>
+
+          <p class="hero__meta">
+            <span class="hero__meta-strong" id="weddingDateLabel">Wedding date:</span>
+            <span id="weddingDateText">[Month Day, Year]</span>
+          </p>
+        </div>
+      </div>
+      <div class="floral-tl"></div>
+<div class="floral-tr"></div>
+<div class="floral-bl"></div>
+<div class="floral-br"></div>
+
+
+    </section>
+
+    <!--section story-->
+    <section class="section screen" id="story" data-screen="story">
+      <div class="section__inner">
+        <div class="story-shell">
+          <header class="story-head">
+            <h2>Our Story</h2>
+            <p class="story-subtitle">
+              Small moments that became
+              unforgettable memories.
+            </p>
+          </header>
+
+          <div class="story-grid">
+            <button class="story-card" type="button" data-title="How we met" data-date="Jun 2025" data-text="We met at a time when we both believed that hope had been exhausted. Without realizing it, God ordained both the moment and the means to bring us together. From our very first encounter, we felt in our hearts the certainty that we had found the person we had so fervently prayed for. As time passed, that encounter became a story built upon shared values, strength, love, and a sincere desire to serve God together.
+                I found the one my heart loves; I held him, and I would not let him go.
+                Song of Solomon 3:4" data-img="assets/photos/p8.jpg">
+              <img src="assets/photos/p23.jpg" alt="How we met" />
+              <span class="story-label">How we met</span>
+            </button>
+
+            <button class="story-card" type="button" data-title="Our first trip" data-date="August 2025"
+              data-text="Our first trip together was to Myrtle Beach, where we attended a Christian event in Spanish. Despite the small challenges with the language, we discovered that our hearts shared the same values and principles. We could hardly believe that, despite coming from different countries, we had been guided by the same teachings. That trip was truly incredible; through it, God confirmed that we were meant to find one another and to walk together hand in hand in love and faith."
+              data-img="assets/photos/p25.jpg">
+              <img src="assets/photos/p20.jpg" alt="Our first trip" />
+              <span class="story-label">Our first trip</span>
+            </button>
+
+            <button class="story-card" type="button" data-title="The proposal" data-date="October 2025" data-text="The day of the proposal was a complete surprise to me. He told me that he had reserved dinner at his favorite restaurant, near the place where he had asked me to be his girlfriend. As we parked the car and began to walk, the song “A Thousand Years” suddenly started playing. In that moment, I knew it was THE DAY.
+            He led me to a sign that read, “Will you marry me?” and there he was—on one knee, in tears—asking me in Spanish, “Would you grow old with me?” I was in complete shock… and I said YES! Of course I did.
+            It was the most beautiful day of my life. Surrounded by family and friends, our forever began."
+              data-img="assets/photos/p10.jpg">
+              <img src="assets/photos/p9.jpg" alt="The proposal" />
+              <span class="story-label">The proposal</span>
+            </button>
+
+            <button class="story-card" type="button" data-title="Our future" data-date="2026-..."
+              data-text="Our future will be a beautiful journey together, guided by God and founded upon the faith that united us from the very beginning. We will walk hand in hand, sharing dreams, joys, and challenges, building a home filled with love, values, and hope. Each day will be a new opportunity to grow together, to celebrate our love, and to serve God, knowing that we are destined to belong to one another forever."
+              data-img="assets/photos/p22.jpg">
+              <img src="assets/photos/p18.jpg" alt="Our future" />
+              <span class="story-label">Our future</span>
+            </button>
           </div>
         </div>
       </div>
+      <div class="floral-tl"></div>
+<div class="floral-tr"></div>
+<div class="floral-bl"></div>
+<div class="floral-br"></div>
 
-      <div class="hero__cta">
-        <button class="btn btn--primary" type="button" data-goto="itinerary">
-          View details
-        </button>
-        <button class="btn btn--ghost" type="button" data-goto="rsvp">
-          Confirm attendance
-        </button>
+    </section>
+
+    <!--section Venue-->
+
+    <section class="section section--alt screen" id="venue" data-screen="venue">
+      <div class="section__inner">
+        <h2>Venue</h2>
+
+        <p class="venue-location">
+          Spotswood Baptist Church 4009
+          Lafayette Blvd<br />
+          Fredericksburg, VA 22408<br />
+          United States
+        </p>
+
+        <!-- MAP PREVIEW -->
+        <div class="venue-map">
+          <iframe title="Venue map"
+            src="https://www.google.com/maps?q=4009+Lafayette+Blvd+Fredericksburg+VA+22408&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+          </iframe>
+        </div>
+
+        <p class="venue-note">
+          Ceremony and reception will take place
+          at the same location.
+        </p>
+
+        <a class="btn"
+          href="https://www.google.com/maps/search/?api=1&query=4009+Lafayette+Blvd+Fredericksburg+VA+22408"
+          target="_blank" rel="noopener">
+          Open in Google Maps
+        </a>
       </div>
+      <div class="floral-tl"></div>
+<div class="floral-tr"></div>
+<div class="floral-bl"></div>
+<div class="floral-br"></div>
 
-      <p class="hero__meta">
-        <span class="hero__meta-strong" id="weddingDateLabel">Wedding date:</span>
-        <span id="weddingDateText">[Month Day, Year]</span>
-      </p>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <!--section Itinerary-->
 
-<!--section story-->
-<section class="section screen" id="story" data-screen="story">
-  <div class="section__inner">
-    <div class="story-shell">
-      <header class="story-head">
-        <h2>Our Story</h2>
-        <p class="story-subtitle">Small moments that became unforgettable memories.</p>
-      </header>
+    <section class="section screen" id="itinerary" data-screen="itinerary">
+      <div class="section__inner">
+        <div class="itinerary-shell">
+          <h2>Itinerary</h2>
 
-      <div class="story-grid">
-        <button class="story-card" type="button"
-          data-title="How we met"
-          data-date="2019"
-          data-text="Everything started with a simple conversation that changed our lives."
-          data-img="assets/img/story1.jpg">
-          <img src="assets/img/story1.jpg" alt="How we met">
-          <span class="story-label">How we met</span>
-        </button>
+          <p class="itinerary__intro">
+            A simple schedule for the day. Times
+            may be updated.
+          </p>
 
-        <button class="story-card" type="button"
-          data-title="Our first trip"
-          data-date="2020"
-          data-text="Our first adventure together, full of laughter and memories."
-          data-img="assets/img/story2.jpg">
-          <img src="assets/img/story2.jpg" alt="Our first trip">
-          <span class="story-label">Our first trip</span>
-        </button>
+          <div class="timeline" aria-label="Wedding day itinerary">
+            <article class="timeline__item">
+              <div class="timeline__time">
+                2:00 PM
+              </div>
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>Ceremony</h3>
+                <p>
+                  Join us for the holy union of
+                  Austin and Briggithe Goodwyn.
+                </p>
+              </div>
+            </article>
 
-        <button class="story-card" type="button"
-          data-title="The proposal"
-          data-date="2023"
-          data-text="A moment we will treasure forever."
-          data-img="assets/img/story3.jpg">
-          <img src="assets/img/story3.jpg" alt="The proposal">
-          <span class="story-label">The proposal</span>
-        </button>
+            <article class="timeline__item">
+              <div class="timeline__time">
+                2:45 PM
+              </div>
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>Reception</h3>
+                <p>
+                  Dinner, speeches, and
+                  celebration.
+                </p>
+              </div>
+            </article>
 
-        <button class="story-card" type="button"
-          data-title="Our future"
-          data-date="2026"
-          data-text="Building dreams and a lifetime together."
-          data-img="assets/img/story4.jpg">
-          <img src="assets/img/story4.jpg" alt="Our future">
-          <span class="story-label">Our future</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<!--section Venue-->
-
-<section class="section section--alt screen" id="venue" data-screen="venue">
-  <div class="section__inner">
-    <h2>Venue</h2>
-
-    <p class="venue-location">
-  4009 Lafayette Blvd<br>
-  Fredericksburg, VA 22408<br>
-  United States
-</p>
-
-
-    <!-- MAP PREVIEW -->
-    <div class="venue-map">
-  <iframe
-    title="Venue map"
-    src="https://www.google.com/maps?q=4009+Lafayette+Blvd+Fredericksburg+VA+22408&output=embed"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    allowfullscreen>
-  </iframe>
-</div>
-
-
-    <p class="venue-note">
-      Ceremony and reception will take place at the same location.
-    </p>
-
-    <a
-      class="btn"
-      href="https://www.google.com/maps/search/?api=1&query=4009+Lafayette+Blvd+Fredericksburg+VA+22408"
-      target="_blank"
-      rel="noopener"
-    >
-      Open in Google Maps
-    </a>
-  </div>
-</section>
-
-
-<!--section Itinerary-->
-
-<section class="section screen" id="itinerary" data-screen="itinerary">
-  <div class="section__inner">
-    <div class="itinerary-shell">
-    <h2>Itinerary</h2>
-
-    <p class="itinerary__intro">
-      A simple schedule for the day. Times may be updated.
-    </p>
-
-    <div class="timeline" aria-label="Wedding day itinerary">
-      <article class="timeline__item">
-        <div class="timeline__time">4:00 PM</div>
-        <div class="timeline__dot" aria-hidden="true"></div>
-        <div class="timeline__content">
-          <h3>Ceremony</h3>
-          <p>Guests arrive and take their seats.</p>
-        </div>
-      </article>
-
-      <article class="timeline__item">
-        <div class="timeline__time">5:00 PM</div>
-        <div class="timeline__dot" aria-hidden="true"></div>
-        <div class="timeline__content">
-          <h3>Cocktail Hour</h3>
-          <p>Drinks, light bites, and photos.</p>
-        </div>
-      </article>
-
-      <article class="timeline__item">
-        <div class="timeline__time">6:30 PM</div>
-        <div class="timeline__dot" aria-hidden="true"></div>
-        <div class="timeline__content">
-          <h3>Reception</h3>
-          <p>Dinner, speeches, and celebration.</p>
-        </div>
-      </article>
-
-      <article class="timeline__item">
-        <div class="timeline__time">8:00 PM</div>
-        <div class="timeline__dot" aria-hidden="true"></div>
-        <div class="timeline__content">
-          <h3>First Dance</h3>
-          <p>Followed by open dancing.</p>
-        </div>
-      </article>
-
-      <article class="timeline__item">
-        <div class="timeline__time">10:30 PM</div>
-        <div class="timeline__dot" aria-hidden="true"></div>
-        <div class="timeline__content">
-          <h3>Farewell</h3>
-          <p>Thank you for joining us.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-  </div>
-</section>
-
-
-<!--section wedding wishes-->
-<section class="section screen" id="wedding-wishes" data-screen="wedding-wishes">
-  <div class="section__inner">
-    <div class="wishes-shell">
-      <header class="wishes-head">
-        <h2>Wedding Wishes</h2>
-        <div class="wishes-divider" aria-hidden="true"></div>
-      </header>
-
-      <p class="donation-text donation-text--lead">
-        We are building memories, not things.
-      </p>
-
-      <p class="donation-text">
-        If you would like to give a gift, a contribution toward our honeymoon
-        would mean so much to us.
-      </p>
-
-      <div class="wishes-note">
-        <span class="wishes-icon" aria-hidden="true">♥</span>
-        <span>Your presence is the greatest gift of all.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!--section RSVP-->
-
-<section id="rsvp" class="section screen" data-screen="rsvp">
-  <div class="section__inner">
-    <h2>RSVP</h2>
-    <p>Confirma tu asistencia antes del: <strong>April 8</strong></p>
-
-    <form class="rsvp-form" id="rsvpForm" novalidate>
-      <!-- Honeypot anti-spam (oculto por CSS) -->
-      <input type="text" name="company" id="company" autocomplete="off" tabindex="-1" />
-
-      <div class="rsvp-grid">
-        <div class="field">
-          <label for="rsvpName">Nombre completo</label>
-          <input id="rsvpName" name="name" type="text" placeholder="Tu nombre" required />
-          <small class="field__error" data-error-for="name"></small>
-        </div>
-
-        <div class="field">
-          <label for="rsvpPhone">Teléfono (opcional)</label>
-          <input id="rsvpPhone" name="phone" type="tel" placeholder="+1 571..." />
-        </div>
-
-        <div class="field field--full">
-          <label>¿Asistirás?</label>
-          <div class="pill-group">
-            <label class="pill">
-              <input type="radio" name="attending" value="yes" required />
-              <span>Sí</span>
-            </label>
-            <label class="pill">
-              <input type="radio" name="attending" value="no" />
-              <span>No</span>
-            </label>
           </div>
-          <small class="field__error" data-error-for="attending"></small>
-        </div>
-
-        <div class="field">
-          <label for="rsvpGuests">Número de invitados</label>
-          <select id="rsvpGuests" name="guests">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
-          <small class="field__hint">Inclúyete en el conteo.</small>
-        </div>
-
-        <div class="field field--full">
-          <label for="rsvpMessage">Mensaje (opcional)</label>
-          <textarea id="rsvpMessage" name="message" rows="4" placeholder="Notas o mensaje"></textarea>
         </div>
       </div>
+      <div class="floral-tl"></div>
+<div class="floral-tr"></div>
+<div class="floral-bl"></div>
+<div class="floral-br"></div>
 
-      <div class="rsvp-actions">
-        <button class="btn" type="submit">Enviar RSVP</button>
-        <p class="rsvp-status" id="rsvpStatus" role="status" aria-live="polite"></p>
+    </section>
+
+    <!--section wedding wishes-->
+    <section class="section screen" id="wedding-wishes" data-screen="wedding-wishes">
+      <div class="section__inner">
+        <div class="wishes-shell">
+          <header class="wishes-head">
+            <h2>Wedding Wishes</h2>
+            <div class="wishes-divider" aria-hidden="true"></div>
+          </header>
+
+          <p class="donation-text donation-text--lead">
+            We are building memories, not
+            things.
+          </p>
+
+          <p class="donation-text">
+            If you would like to give a gift, a
+            contribution toward our honeymoon
+            would mean so much to us.
+          </p>
+
+          <div class="wishes-note">
+            <span class="wishes-icon" aria-hidden="true">♥</span>
+            <span>Your presence is the greatest
+              gift of all.</span>
+          </div>
+        </div>
       </div>
-    </form>
+      <div class="floral-tl"></div>
+<div class="floral-tr"></div>
+<div class="floral-bl"></div>
+<div class="floral-br"></div>
 
-    <p class="rsvp__privacy">Solo usaremos esta información para la planificación del evento.</p>
-  </div>
-</section>
+    </section>
 
+    <!--section RSVP-->
 
-    <footer class="footer">
-      <div class="footer__inner">
-        <small>Con cariño, David &amp; [Nombre]</small>
+    <section id="rsvp" class="section screen" data-screen="rsvp">
+      <div class="section__inner">
+        <h2>RSVP</h2>
+        <p>
+           Before:
+          <strong>April 8</strong>
+        </p>
+
+        <form class="rsvp-form" id="rsvpForm" novalidate>
+          <!-- Honeypot anti-spam (oculto por CSS) -->
+          <input type="text" name="company" id="company" autocomplete="off" tabindex="-1" />
+
+          <div class="rsvp-grid">
+            <div class="field">
+              <label for="rsvpName">Full name</label>
+              <input id="rsvpName" name="name" type="text" placeholder="your name" required />
+              <small class="field__error" data-error-for="name"></small>
+            </div>
+
+            <div class="field">
+              <label for="rsvpPhone">Phone (opcional)</label>
+              <input id="rsvpPhone" name="phone" type="tel" placeholder="+1 571..." />
+            </div>
+
+            <div class="field field--full">
+              <label>will you attend?</label>
+              <div class="pill-group">
+                <label class="pill">
+                  <input type="radio" name="attending" value="yes" required />
+                  <span>Yes</span>
+                </label>
+                <label class="pill">
+                  <input type="radio" name="attending" value="no" />
+                  <span>No</span>
+                </label>
+              </div>
+              <small class="field__error" data-error-for="attending"></small>
+            </div>
+
+            <div class="field">
+              <label for="rsvpGuests">Number of Guests</label>
+              <select id="rsvpGuests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              <small class="field__hint">Include you in the count.</small>
+            </div>
+
+            <div class="field field--full">
+              <label for="rsvpMessage">Message (optional)</label>
+              <textarea id="rsvpMessage" name="message" rows="4" placeholder="Notes or Message"></textarea>
+            </div>
+          </div>
+
+          <div class="rsvp-actions">
+            <button class="btn" type="submit">
+              Enviar RSVP
+            </button>
+            <p class="rsvp-status" id="rsvpStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <p class="rsvp__privacy">
+          We only use this information for event planning.
+        </p>
       </div>
-    </footer>
+      <div class="floral-tl"></div>
+<div class="floral-tr"></div>
+<div class="floral-bl"></div>
+<div class="floral-br"></div>
+
+    </section>
+
+
   </main>
   <div class="story-modal" id="storyModal" aria-hidden="true">
-  <div class="story-modal-content" role="dialog" aria-modal="true">
-    <div class="story-modal-image">
-      <img id="modalImage" src="" alt="">
-    </div>
-    <div class="story-modal-text">
-      <button class="close-modal" id="closeModal" type="button">✕</button>
-      <h3 id="modalTitle"></h3>
-      <small id="modalDate"></small>
-      <p id="modalText"></p>
+    <div class="story-modal-content" role="dialog" aria-modal="true">
+      <div class="story-modal-image">
+        <img id="modalImage" src="" alt="" />
+      </div>
+      <div class="story-modal-text">
+        <button class="close-modal" id="closeModal" type="button">
+          ✕
+        </button>
+        <h3 id="modalTitle"></h3>
+        <small id="modalDate"></small>
+        <p id="modalText"></p>
+      </div>
     </div>
   </div>
-</div>
 
-<audio id="bgMusic" preload="auto" loop>
-  <source src="assets/audio/turning.mp3" type="audio/mpeg">
-</audio>
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="assets/audio/turning.mp3" type="audio/mpeg" />
+  </audio>
 
-<button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Activar música">
-  <span class="music-toggle__icon" aria-hidden="true">♪</span>
-  <span class="music-toggle__text">Music: Off</span>
-</button>
-
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Activar música">
+    <span class="music-toggle__icon" aria-hidden="true">♪</span>
+    <span class="music-toggle__text">Music: Off</span>
+  </button>
 
   <script src="js/main.js"></script>
-
-
-
 </body>
+
 </html>
