@@ -53,18 +53,21 @@
   const musicToggle = $("#musicToggle");
   let musicEnabled = false;
 
-  function updateMusicUI() {
-    if (!musicToggle) return;
-    musicToggle.setAttribute("aria-pressed", musicEnabled ? "true" : "false");
+function updateMusicUI() {
+  if (!musicToggle) return;
 
-    const text = musicToggle.querySelector(".music-toggle__text");
-    if (text) text.textContent = musicEnabled ? "Music: On" : "Music: Off";
+  const icon = musicToggle.querySelector(".music-toggle__icon");
+  if (!icon) return;
 
-    musicToggle.setAttribute(
-      "aria-label",
-      musicEnabled ? "Silenciar música" : "Activar música"
-    );
+  if (musicEnabled) {
+    icon.textContent = "🔊";
+    musicToggle.setAttribute("aria-label", "Mute music");
+  } else {
+    icon.textContent = "🔇";
+    musicToggle.setAttribute("aria-label", "Play music");
   }
+}
+
 
   async function tryPlayMusic() {
     if (!bgMusic) {
