@@ -60,13 +60,15 @@ function updateMusicUI() {
   if (!icon) return;
 
   if (musicEnabled) {
-    icon.textContent = "🔊";
+    icon.textContent = "♪";
     musicToggle.setAttribute("aria-label", "Mute music");
   } else {
-    icon.textContent = "🔇";
+    icon.textContent = "⨯";
     musicToggle.setAttribute("aria-label", "Play music");
   }
 }
+
+
 
 
   async function tryPlayMusic() {

@@ -1605,6 +1605,24 @@ a{ color: inherit; text-decoration: none; }
 }
 
 
+/* =========================================
+   FIX: FONDO UNIFICADO (NO MÁS CORTES FEOS)
+   ========================================= */
+
+html,
+body{
+  min-height: 100%;
+  background:
+    linear-gradient(
+      180deg,
+      #c9d9e6,
+      #b8cde0 60%,
+      #a9c1d8
+    );
+}
+
+
+
 
 
 
