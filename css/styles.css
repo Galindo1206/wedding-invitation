@@ -1622,6 +1622,73 @@ body{
 }
 
 
+/* =========================================
+   SIDE NAV – FORZAR LÍNEAS (OVERRIDE TOTAL)
+   ========================================= */
+
+.side-nav button,
+.side-nav button::before,
+.side-nav button::after,
+.side-nav button span{
+  width: 2px !important;
+  height: 26px !important;
+  padding: 0 !important;
+
+  background: rgba(111,143,163,0.35) !important;
+  border-radius: 2px !important;
+  border: none !important;
+
+  display: block !important;
+}
+
+/* Activo */
+.side-nav button.is-active,
+.side-nav button.is-active::before,
+.side-nav button.is-active::after,
+.side-nav button.is-active span{
+  height: 42px !important;
+  background: rgba(16,32,39,0.85) !important;
+}
+
+/* Hover */
+.side-nav button:hover,
+.side-nav button:hover::before,
+.side-nav button:hover::after,
+.side-nav button:hover span{
+  background: rgba(111,143,163,0.65) !important;
+}
+
+/* Contenedor */
+.side-nav{
+  position: fixed !important;
+  top: 50% !important;
+  right: 22px !important;
+  transform: translateY(-50%) !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 680px){
+  .side-nav button,
+  .side-nav button::before,
+  .side-nav button::after,
+  .side-nav button span{
+    height: 22px !important;
+  }
+
+  .side-nav button.is-active,
+  .side-nav button.is-active::before,
+  .side-nav button.is-active::after,
+  .side-nav button.is-active span{
+    height: 34px !important;
+  }
+}
+
 
 
 
